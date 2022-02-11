@@ -48,7 +48,7 @@ public class DescriptionServices implements IDescriptionServices {
                 .map(old -> {
                     old.setText(description.getText());
                     old.setUser(description.getUser());
-                    old.setDescriptions(description.getDescriptions());
+                    //old.setDescriptions(description.getDescriptions());
                     old.setProfileImage(description.getProfileImage());
                     return repository.save(old);
                 })
@@ -58,6 +58,20 @@ public class DescriptionServices implements IDescriptionServices {
     @Override
     public void deleteById(long id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    public Description addDescriptionToDescription(Description description, SingleDescription _description) {
+        description.getDescriptions().add(_description);
+        repository.save(description);
+        return  description;
+    }
+
+    @Override
+    public Description removeDescriptionFromDescription(Description description, long descriptionID) {
+        description.getDescriptions().removeIf( data -> data.getId() == descriptionID);
+        repository.save(description);
+        return  description;
     }
 
     @Override
