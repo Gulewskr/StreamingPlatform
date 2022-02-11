@@ -22,23 +22,6 @@ public class UserController {
     @Autowired
     UserServices userServices;
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Object> getUserById(@PathVariable long id)
-    {
-        try {
-            User user = userServices.getById(id);
-            return ResponseHandler.generateResponse(
-                    String.format("Got user info with id %d", id),
-                    HttpStatus.OK,
-                    user);
-        } catch (Exception e){
-            return ResponseHandler.generateErrorResponse(
-                    1,
-                    String.format("Cannot find user with id %d", id),
-                    HttpStatus.BAD_REQUEST);
-        }
-    }
-
     @GetMapping()
     public ResponseEntity<Object> getUserList()
     {
@@ -53,6 +36,23 @@ public class UserController {
                     1,
                     "Cannot get list of users.",
                     HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Object> getUserById(@PathVariable long id)
+    {
+        try {
+            User user = userServices.getById(id);
+            return ResponseHandler.generateResponse(
+                    String.format("Got user info with id %d", id),
+                    HttpStatus.OK,
+                    user);
+        } catch (Exception e){
+            return ResponseHandler.generateErrorResponse(
+                    1,
+                    String.format("Cannot find user with id %d", id),
+                    HttpStatus.BAD_REQUEST);
         }
     }
 

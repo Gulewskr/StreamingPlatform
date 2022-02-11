@@ -19,9 +19,6 @@ public class User {
     @Column
     private String email;
 
-    @OneToOne
-    private Description description;
-
     public void setId(Long id) {
         this.id = id;
     }
@@ -33,12 +30,4 @@ public class User {
     public String getName() { return name; }
     public String getPassword() { return password; }
     public String getEmail() { return email; }
-
-    public Description getDescription() {
-        return description;
-    }
-
-    public void setDescription(Description description) {
-        this.description = description;
-    }
 }

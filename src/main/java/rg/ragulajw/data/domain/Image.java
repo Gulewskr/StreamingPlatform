@@ -3,7 +3,7 @@ package rg.ragulajw.data.domain;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Images")
+@Table(name = "images")
 public class Image {
 
     @Id

@@ -20,7 +20,7 @@ public class RagulajwApplication {
     }
 
     @Bean
-    public OpenAPI customOpenAPI(@Value("2") String appVersion) {
+    public OpenAPI customOpenAPI(@Value("1") String appVersion) {
         return new OpenAPI()
                 .components(new Components())
                 .info(new Info().title("Stream API").version(appVersion));
