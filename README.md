@@ -2,8 +2,8 @@
 Twitch clone project to train Java Spring, TypeScript and React
 
 Project repositories:
-* backend - (Java, Spring) - https://github.com/Gulewskr/StreamingPlatform
-* frontend - (TypeScript, React, Bootstrap) - TBA
+* backend - (Java, Spring) - https://github.com/Gulewskr/StreamingPlatform/tree/main/WebAPI
+* frontend - (TypeScript, React, Bootstrap) - https://github.com/Gulewskr/StreamingPlatform/tree/main/webapp
 
 ___
 Used technologies:
