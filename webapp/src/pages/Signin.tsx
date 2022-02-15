@@ -1,17 +1,17 @@
 import React from 'react';
 import logo from './../logo.svg';
+
+//components
+import SignIn from '../components/forms/signin/signin';
+
+//styles
 import './../App.css';
 
 const Signin = () => {
   return(
     <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        Place Under Construction - Signin.
-      </p>
-    </header>
-  </div>
+      <SignIn />
+    </div>
   );
 }
 

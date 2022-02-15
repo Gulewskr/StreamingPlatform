@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home, Login, Signin } from './pages/';
 
@@ -9,8 +10,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className='background'/>
-      <div>
-        <Navbar />
+      <Navbar />
+      <div style={{
+        "minHeight" : "100vh"
+      }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Following" element={<Home />} />
@@ -20,6 +23,7 @@ function App() {
           <Route path="/SignIn" element={<Signin />} />
         </Routes>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }

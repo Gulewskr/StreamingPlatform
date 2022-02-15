@@ -1,0 +1,30 @@
+.StyledDiv1
+{
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    max-width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+    min-height: 330px;
+    box-shadow: 3px 3px 10px 10px #15221c;
+}
+
+.SimpleButton{
+    color: white;
+    background-color: #21CB38;
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    margin: auto;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.SimpleButton:hover{
+    color: rgb(189, 189, 189);
+    background-color: #20912f;
+}

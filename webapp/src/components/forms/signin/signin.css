@@ -1,0 +1,9 @@
+.SignInFrom 
+{
+    max-width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 330px;
+    box-shadow: 3px 3px 10px 10px #15221c;
+}

@@ -1,0 +1,15 @@
+.l-navbar {
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: var(--nav-width);*/
+    min-height: 100%;
+    padding: .5rem 1rem 0 0;
+    transition: .5s;
+    z-index: var(--z-fixed)
+}
+
+.l-navbar .showed {
+
+}

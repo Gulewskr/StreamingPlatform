@@ -1,0 +1,28 @@
+.FormDiv
+{
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    color: white;
+}
+
+.FormButton{
+    color: white;
+    background-color: #21CB38;
+    width: 200px;
+    font-weight: bold;
+    border: none;
+}
+
+.FormButton:hover{
+    background-color: #20912f;
+}
+
+.FormTextRef{
+    color: #BFBFBF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.FormTextRef:hover{
+    color: #21CB38;
+}
