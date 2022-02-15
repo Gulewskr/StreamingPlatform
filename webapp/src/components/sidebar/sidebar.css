@@ -1,15 +1,61 @@
 .l-navbar {
-    background-color: aqua;
+    background-color: #292929;
     position: absolute;
     top: 0;
     left: 0;
     /*width: var(--nav-width);*/
     min-height: 100%;
-    padding: .5rem 1rem 0 0;
-    transition: .5s;
-    z-index: var(--z-fixed)
+    padding: .5rem 1rem .5rem .5rem;
+    text-align: left;
+    z-index: var(--z-fixed);
+    border-right: solid 2px rgb(34, 34, 34);
 }
 
-.l-navbar .showed {
 
+.showed,
+.hidden{
+    width: 50px;
+}
+
+#sidebar-button,
+#sidebar-button-span{
+    display: none;
+}
+
+#sidebar-button{
+    position: absolute;
+    right: -5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.l-navbar .nav-item{
+    position: relative;
+}
+
+.l-navbar .link{
+    color: #30db47;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#sidebar-button:hover{
+    background-color: #5f5f5f;
+}
+
+@media only screen and (min-width: 768px) {
+    .showed{
+        width: 250px;
+        
+    }   
+
+    #sidebar-button,
+    #sidebar-button-span{
+        display: inline;
+    }
 }

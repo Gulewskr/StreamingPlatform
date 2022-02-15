@@ -11,18 +11,30 @@
     width: 200px;
     font-weight: bold;
     border: none;
+    transition: .25s;
 }
 
 .FormButton:hover{
-    background-color: #20912f;
+    background-color: #30db47;
+    box-shadow: 
+        0 0 5px 5px #21CB38;
 }
 
 .FormTextRef{
     color: #BFBFBF;
     font-weight: bold;
     text-decoration: none;
+    transition: .5s;
 }
 
 .FormTextRef:hover{
     color: #21CB38;
+}
+
+label {
+    color: black;
+}
+
+.checkbox-label{
+    color: white;
 }

@@ -1,0 +1,32 @@
+.channelSidebar{
+    padding: 0;
+    margin-left: -6px;
+    margin-top: 4px;
+}
+
+.channelSidebar .img-container{
+    width: 44px;
+    margin-right: 4px;
+}
+
+.channelSidebar .channelName{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.channelSidebar .channelCategory{
+    font-weight: 300;
+    margin-top: -6px;
+    font-size: 14px;
+    color: #aaa8a8;
+}
+
+.channelSidebar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.offline img{
+    filter: grayscale();
+}

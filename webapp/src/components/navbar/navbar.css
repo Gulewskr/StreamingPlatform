@@ -1,7 +1,37 @@
-.active{
-    color: #21CB38;
+.loginandregisterbutton{
+    background-color: #0c881c;
+    font-weight: bold;
+    transition: .5s;
 }
 
-.loginandregisterbutton{
+.loginandregisterbutton:hover{
     background-color: #21CB38;
+    font-weight: bold;
 }
+
+.nav-link{
+    min-width: 100px;
+}
+
+.nav-link:hover .linkbutton{
+    color: #21CB38;
+    text-shadow:
+    0 0 7px #21CB38,
+    0 0 60px #21CB38,
+    0 0 90px #21CB38,
+    0 0 200px #21CB38;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.active .linkbutton{
+    color: #21CB38;
+    font-weight: 600;
+}
+
+/*
+.navbar{
+    position: sticky;
+    min-height: 80px;
+    top: -80px;
+}*/
